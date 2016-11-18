@@ -5,17 +5,24 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "E35A64FC2DD40CC0B7357D83C58A512C8A59B9CA" : 9223372036854775807,
+    "75601FD81BC6ADF58A45D5078CDBC5FAEBCCE86E" : 9223372036854775807,
     "8C8A05EFF348C63AD181BAF180DF73E8B6A702AB" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4A142FBF-4FB1-4BA8-96FE-782C0532CFE6",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "E35A64FC2DD40CC0B7357D83C58A512C8A59B9CA" : "L-pika\/",
+    "75601FD81BC6ADF58A45D5078CDBC5FAEBCCE86E" : "Eltaso\/",
     "8C8A05EFF348C63AD181BAF180DF73E8B6A702AB" : "Alizes\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "L-pika",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "L-pika\/L-pika.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/el-hoshino\/Eltaso.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "75601FD81BC6ADF58A45D5078CDBC5FAEBCCE86E"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/el-hoshino\/Alizes.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
