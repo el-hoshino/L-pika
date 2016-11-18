@@ -21,16 +21,14 @@ class Model: NSObject {
 		let morseCode = MorseCode.Sentence(message)
 		
 		DispatchQueue.global().async {
-			morseCode.binaryCode.codes.forEach { (code) in
-				switch code {
-				case .i:
-					self.turnTorchMode(to: .on, for: unitCodeTimeInterval)
-					
-				case .o:
-					self.turnTorchMode(to: .off, for: unitCodeTimeInterval)
-				}
-			}
+			
+			morseCode.groupedBinaryCode.forEach({ (codeGroup) in
+				let codeTimeInterval = unitCodeTimeInterval * TimeInterval(codeGroup.length)
+				self.turnTorchMode(to: codeGroup.code.torchMode, for: codeTimeInterval)
+			})
+			
 			self.turnTorchMode(to: .off)
+			
 		}
 		
 	}
@@ -54,6 +52,20 @@ class Model: NSObject {
 			Thread.sleep(forTimeInterval: interval)
 		}
 		
+	}
+	
+}
+
+extension BinaryCode.Code {
+	
+	var torchMode: AVCaptureTorchMode {
+		switch self {
+		case .i:
+			return .on
+			
+		case .o:
+			return .off
+		}
 	}
 	
 }
