@@ -14,9 +14,28 @@
 		165A319F1DDEB9AA00F15915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165A319D1DDEB9AA00F15915 /* LaunchScreen.storyboard */; };
 		165A31AA1DDEB9AA00F15915 /* L_pikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165A31A91DDEB9AA00F15915 /* L_pikaTests.swift */; };
 		165A31B51DDEB9AA00F15915 /* L_pikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165A31B41DDEB9AA00F15915 /* L_pikaUITests.swift */; };
+		165A31CB1DDEB9ED00F15915 /* Alizes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165A31C81DDEB9E000F15915 /* Alizes.framework */; };
+		165A31CC1DDEB9ED00F15915 /* Alizes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 165A31C81DDEB9E000F15915 /* Alizes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16A3B3FC1DDF057600C82CE4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B3FB1DDF057600C82CE4 /* Model.swift */; };
+		16A3B4001DDF07E800C82CE4 /* Eltaso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; };
+		16A3B4011DDF07E800C82CE4 /* Eltaso.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1654FF271DDEBCE000EE802B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 79E14E821D2B90DA00AF6EE4;
+			remoteInfo = Eltaso;
+		};
+		1654FF291DDEBCE000EE802B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 79E14E8C1D2B90DA00AF6EE4;
+			remoteInfo = EltasoTests;
+		};
 		165A31A61DDEB9AA00F15915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 165A31891DDEB9AA00F15915 /* Project object */;
@@ -31,9 +50,53 @@
 			remoteGlobalIDString = 165A31901DDEB9AA00F15915;
 			remoteInfo = "L-pika";
 		};
+		165A31C71DDEB9E000F15915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 165A316E1DDEB8E600F15915;
+			remoteInfo = Alizes;
+		};
+		165A31C91DDEB9E000F15915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 165A31771DDEB8E600F15915;
+			remoteInfo = AlizesTests;
+		};
+		165A31CD1DDEB9ED00F15915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 165A316D1DDEB8E600F15915;
+			remoteInfo = Alizes;
+		};
+		16A3B4021DDF07E800C82CE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E14E811D2B90DA00AF6EE4;
+			remoteInfo = Eltaso;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		165A31CF1DDEB9ED00F15915 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				16A3B4011DDF07E800C82CE4 /* Eltaso.framework in Embed Frameworks */,
+				165A31CC1DDEB9ED00F15915 /* Alizes.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eltaso.xcodeproj; path = ../../Eltaso/Eltaso/Eltaso.xcodeproj; sourceTree = "<group>"; };
 		165A31911DDEB9AA00F15915 /* L-pika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "L-pika.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		165A31941DDEB9AA00F15915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		165A31961DDEB9AA00F15915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +110,8 @@
 		165A31B01DDEB9AA00F15915 /* L-pikaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "L-pikaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		165A31B41DDEB9AA00F15915 /* L_pikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L_pikaUITests.swift; sourceTree = "<group>"; };
 		165A31B61DDEB9AA00F15915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alizes.xcodeproj; path = ../../Alizes/Alizes/Alizes.xcodeproj; sourceTree = "<group>"; };
+		16A3B3FB1DDF057600C82CE4 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A3B4001DDF07E800C82CE4 /* Eltaso.framework in Frameworks */,
+				165A31CB1DDEB9ED00F15915 /* Alizes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +141,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1654FF221DDEBCE000EE802B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1654FF281DDEBCE000EE802B /* Eltaso.framework */,
+				1654FF2A1DDEBCE000EE802B /* EltasoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		165A31881DDEB9AA00F15915 = {
 			isa = PBXGroup;
 			children = (
+				1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */,
+				165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */,
 				165A31931DDEB9AA00F15915 /* L-pika */,
 				165A31A81DDEB9AA00F15915 /* L-pikaTests */,
 				165A31B31DDEB9AA00F15915 /* L-pikaUITests */,
@@ -99,6 +177,7 @@
 			children = (
 				165A31941DDEB9AA00F15915 /* AppDelegate.swift */,
 				165A31961DDEB9AA00F15915 /* ViewController.swift */,
+				16A3B3FB1DDF057600C82CE4 /* Model.swift */,
 				165A31981DDEB9AA00F15915 /* Main.storyboard */,
 				165A319B1DDEB9AA00F15915 /* Assets.xcassets */,
 				165A319D1DDEB9AA00F15915 /* LaunchScreen.storyboard */,
@@ -125,6 +204,15 @@
 			path = "L-pikaUITests";
 			sourceTree = "<group>";
 		};
+		165A31C31DDEB9DF00F15915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				165A31C81DDEB9E000F15915 /* Alizes.framework */,
+				165A31CA1DDEB9E000F15915 /* AlizesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +223,13 @@
 				165A318D1DDEB9AA00F15915 /* Sources */,
 				165A318E1DDEB9AA00F15915 /* Frameworks */,
 				165A318F1DDEB9AA00F15915 /* Resources */,
+				165A31CF1DDEB9ED00F15915 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				165A31CE1DDEB9ED00F15915 /* PBXTargetDependency */,
+				16A3B4031DDF07E800C82CE4 /* PBXTargetDependency */,
 			);
 			name = "L-pika";
 			productName = "L-pika";
@@ -221,6 +312,16 @@
 			mainGroup = 165A31881DDEB9AA00F15915;
 			productRefGroup = 165A31921DDEB9AA00F15915 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 165A31C31DDEB9DF00F15915 /* Products */;
+					ProjectRef = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
+				},
+				{
+					ProductGroup = 1654FF221DDEBCE000EE802B /* Products */;
+					ProjectRef = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				165A31901DDEB9AA00F15915 /* L-pika */,
@@ -229,6 +330,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1654FF281DDEBCE000EE802B /* Eltaso.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Eltaso.framework;
+			remoteRef = 1654FF271DDEBCE000EE802B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1654FF2A1DDEBCE000EE802B /* EltasoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EltasoTests.xctest;
+			remoteRef = 1654FF291DDEBCE000EE802B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		165A31C81DDEB9E000F15915 /* Alizes.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alizes.framework;
+			remoteRef = 165A31C71DDEB9E000F15915 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		165A31CA1DDEB9E000F15915 /* AlizesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlizesTests.xctest;
+			remoteRef = 165A31C91DDEB9E000F15915 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		165A318F1DDEB9AA00F15915 /* Resources */ = {
@@ -262,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A3B3FC1DDF057600C82CE4 /* Model.swift in Sources */,
 				165A31971DDEB9AA00F15915 /* ViewController.swift in Sources */,
 				165A31951DDEB9AA00F15915 /* AppDelegate.swift in Sources */,
 			);
@@ -295,6 +428,16 @@
 			isa = PBXTargetDependency;
 			target = 165A31901DDEB9AA00F15915 /* L-pika */;
 			targetProxy = 165A31B11DDEB9AA00F15915 /* PBXContainerItemProxy */;
+		};
+		165A31CE1DDEB9ED00F15915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alizes;
+			targetProxy = 165A31CD1DDEB9ED00F15915 /* PBXContainerItemProxy */;
+		};
+		16A3B4031DDF07E800C82CE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Eltaso;
+			targetProxy = 16A3B4021DDF07E800C82CE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,9 +557,12 @@
 		165A31BA1DDEB9AA00F15915 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = KC8N9BMQJY;
 				INFOPLIST_FILE = "L-pika/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pika";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,9 +573,12 @@
 		165A31BB1DDEB9AA00F15915 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = KC8N9BMQJY;
 				INFOPLIST_FILE = "L-pika/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pika";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +663,7 @@
 				165A31BB1DDEB9AA00F15915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		165A31BC1DDEB9AA00F15915 /* Build configuration list for PBXNativeTarget "L-pikaTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +672,7 @@
 				165A31BE1DDEB9AA00F15915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		165A31BF1DDEB9AA00F15915 /* Build configuration list for PBXNativeTarget "L-pikaUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +681,7 @@
 				165A31C11DDEB9AA00F15915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
