@@ -19,6 +19,7 @@
 		16A3B3FC1DDF057600C82CE4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B3FB1DDF057600C82CE4 /* Model.swift */; };
 		16A3B4001DDF07E800C82CE4 /* Eltaso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; };
 		16A3B4011DDF07E800C82CE4 /* Eltaso.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16A3B4161DE2EA4900C82CE4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B4151DE2EA4900C82CE4 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		165A31B61DDEB9AA00F15915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alizes.xcodeproj; path = ../../Alizes/Alizes/Alizes.xcodeproj; sourceTree = "<group>"; };
 		16A3B3FB1DDF057600C82CE4 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		16A3B4151DE2EA4900C82CE4 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			children = (
 				165A31941DDEB9AA00F15915 /* AppDelegate.swift */,
 				165A31961DDEB9AA00F15915 /* ViewController.swift */,
+				16A3B4151DE2EA4900C82CE4 /* View.swift */,
 				16A3B3FB1DDF057600C82CE4 /* Model.swift */,
 				165A31981DDEB9AA00F15915 /* Main.storyboard */,
 				165A319B1DDEB9AA00F15915 /* Assets.xcassets */,
@@ -394,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A3B4161DE2EA4900C82CE4 /* View.swift in Sources */,
 				16A3B3FC1DDF057600C82CE4 /* Model.swift in Sources */,
 				165A31971DDEB9AA00F15915 /* ViewController.swift in Sources */,
 				165A31951DDEB9AA00F15915 /* AppDelegate.swift in Sources */,

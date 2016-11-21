@@ -16,10 +16,11 @@ class Model: NSObject {
 	private let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
 	private let converter = Converter()
 	
-	func sendMessage(_ message: String) {
+	@discardableResult
+	func sendMessage(_ message: String, through code: Converter.Code) -> String {
 		
 		let unitCodeTimeInterval: TimeInterval = 0.1
-		let code = self.converter.convert(message, to: .morseCode)
+		let code = self.converter.convert(message, to: code)
 		let binaryCodeGroups = self.converter.group(code: code.binaryCode)
 		print(code)
 		
@@ -33,6 +34,8 @@ class Model: NSObject {
 			self.turnTorchMode(to: .off)
 			
 		}
+		
+		return code.initializedString
 		
 	}
 	
