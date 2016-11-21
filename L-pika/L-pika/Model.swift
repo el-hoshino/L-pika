@@ -14,17 +14,20 @@ import Alizes
 class Model: NSObject {
 	
 	private let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+	private let converter = Converter()
 	
 	func sendMessage(_ message: String) {
 		
 		let unitCodeTimeInterval: TimeInterval = 0.1
-		let morseCode = MorseCode.Sentence(message)
+		let code = self.converter.convert(message, to: .morseCode)
+		let binaryCodeGroups = self.converter.group(code: code.binaryCode)
+		print(code)
 		
 		DispatchQueue.global().async {
 			
-			morseCode.groupedBinaryCode.forEach({ (codeGroup) in
-				let codeTimeInterval = unitCodeTimeInterval * TimeInterval(codeGroup.length)
-				self.turnTorchMode(to: codeGroup.code.torchMode, for: codeTimeInterval)
+			binaryCodeGroups.forEach({ (binaryCodeGroup) in
+				let codeTimeInterval = unitCodeTimeInterval * TimeInterval(binaryCodeGroup.length)
+				self.turnTorchMode(to: binaryCodeGroup.code.torchMode, for: codeTimeInterval)
 			})
 			
 			self.turnTorchMode(to: .off)
