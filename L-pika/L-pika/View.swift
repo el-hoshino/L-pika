@@ -21,6 +21,11 @@ class View: UIView {
 		button.setTitleColor(.black, for: .normal)
 		return button
 	}()
+	lazy var resultView: UITextView = {
+		let view = UITextView()
+		view.isEditable = false
+		return view
+	}()
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -39,23 +44,38 @@ class View: UIView {
 		super.didMoveToSuperview()
 		self.addSubview(self.textField)
 		self.addSubview(self.confirmButton)
+		self.addSubview(self.resultView)
 	}
 	
 	override func layoutSubviews() {
 		super.layoutSubviews()
 		
 		let buttonSize = CGSize(width: 50, height: 30)
-		let subviewHorizontalMargin: CGFloat = 10
+		let subviewMargin = CGSize(width: 10, height: 10)
 		let subviewOriginY = (self.frame.height * 0.3) - (buttonSize.height / 2)
 		
-		self.textField.frame.origin.x = subviewHorizontalMargin
-		self.textField.frame.origin.y = subviewOriginY
-		self.textField.frame.size.width = self.frame.width - buttonSize.width - (subviewHorizontalMargin * 3)
-		self.textField.frame.size.height = buttonSize.height
+		do {
+			let view = self.textField
+			view.frame.origin.x = subviewMargin.width
+			view.frame.origin.y = subviewOriginY
+			view.frame.size.width = self.frame.width - buttonSize.width - (subviewMargin.width * 3)
+			view.frame.size.height = buttonSize.height
+		}
 		
-		self.confirmButton.frame.origin.x = self.frame.width - buttonSize.width - subviewHorizontalMargin
-		self.confirmButton.frame.origin.y = subviewOriginY
-		self.confirmButton.frame.size = buttonSize
+		do {
+			let view = self.confirmButton
+			view.frame.origin.x = self.frame.width - buttonSize.width - subviewMargin.width
+			view.frame.origin.y = subviewOriginY
+			view.frame.size = buttonSize
+		}
+		
+		do {
+			let view = self.resultView
+			view.frame.origin.x = subviewMargin.width
+			view.frame.origin.y = self.textField.frame.bottom + subviewMargin.height
+			view.frame.size.width = self.frame.width - (subviewMargin.width * 2)
+			view.frame.size.height = 100
+		}
 		
 	}
 	
