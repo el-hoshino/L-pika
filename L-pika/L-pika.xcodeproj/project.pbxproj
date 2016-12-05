@@ -20,6 +20,14 @@
 		16A3B4001DDF07E800C82CE4 /* Eltaso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; };
 		16A3B4011DDF07E800C82CE4 /* Eltaso.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16A3B4161DE2EA4900C82CE4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B4151DE2EA4900C82CE4 /* View.swift */; };
+		16D3554F1DEEE8E600444561 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D3554E1DEEE8E600444561 /* Messages.framework */; };
+		16D355521DEEE8E600444561 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355511DEEE8E600444561 /* MessagesViewController.swift */; };
+		16D355551DEEE8E600444561 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D355531DEEE8E600444561 /* MainInterface.storyboard */; };
+		16D355571DEEE8E600444561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D355561DEEE8E600444561 /* Assets.xcassets */; };
+		16D3555B1DEEE8E600444561 /* Transmitter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 16D3554C1DEEE8E600444561 /* Transmitter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		16D355631DEEF29000444561 /* CodeCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355621DEEF29000444561 /* CodeCreationViewController.swift */; };
+		16D355651DEEF37E00444561 /* CodeCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355641DEEF37E00444561 /* CodeCreationView.swift */; };
+		16D355681DEFEA2A00444561 /* Eltaso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +87,13 @@
 			remoteGlobalIDString = 79E14E811D2B90DA00AF6EE4;
 			remoteInfo = Eltaso;
 		};
+		16D355591DEEE8E600444561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 165A31891DDEB9AA00F15915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16D3554B1DEEE8E600444561;
+			remoteInfo = Transmitter;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +107,17 @@
 				165A31CC1DDEB9ED00F15915 /* Alizes.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D355611DEEE8E600444561 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				16D3555B1DEEE8E600444561 /* Transmitter.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -114,6 +140,14 @@
 		165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alizes.xcodeproj; path = ../../Alizes/Alizes/Alizes.xcodeproj; sourceTree = "<group>"; };
 		16A3B3FB1DDF057600C82CE4 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		16A3B4151DE2EA4900C82CE4 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		16D3554C1DEEE8E600444561 /* Transmitter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Transmitter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D3554E1DEEE8E600444561 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		16D355511DEEE8E600444561 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		16D355541DEEE8E600444561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		16D355561DEEE8E600444561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16D355581DEEE8E600444561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D355621DEEF29000444561 /* CodeCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeCreationViewController.swift; sourceTree = "<group>"; };
+		16D355641DEEF37E00444561 /* CodeCreationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeCreationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +174,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16D355491DEEE8E600444561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D355681DEFEA2A00444561 /* Eltaso.framework in Frameworks */,
+				16D3554F1DEEE8E600444561 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -160,6 +203,8 @@
 				165A31931DDEB9AA00F15915 /* L-pika */,
 				165A31A81DDEB9AA00F15915 /* L-pikaTests */,
 				165A31B31DDEB9AA00F15915 /* L-pikaUITests */,
+				16D355501DEEE8E600444561 /* Transmitter */,
+				16D3554D1DEEE8E600444561 /* Frameworks */,
 				165A31921DDEB9AA00F15915 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,6 +215,7 @@
 				165A31911DDEB9AA00F15915 /* L-pika.app */,
 				165A31A51DDEB9AA00F15915 /* L-pikaTests.xctest */,
 				165A31B01DDEB9AA00F15915 /* L-pikaUITests.xctest */,
+				16D3554C1DEEE8E600444561 /* Transmitter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +262,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		16D3554D1DEEE8E600444561 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16D3554E1DEEE8E600444561 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16D355501DEEE8E600444561 /* Transmitter */ = {
+			isa = PBXGroup;
+			children = (
+				16D355511DEEE8E600444561 /* MessagesViewController.swift */,
+				16D355621DEEF29000444561 /* CodeCreationViewController.swift */,
+				16D355641DEEF37E00444561 /* CodeCreationView.swift */,
+				16D355531DEEE8E600444561 /* MainInterface.storyboard */,
+				16D355561DEEE8E600444561 /* Assets.xcassets */,
+				16D355581DEEE8E600444561 /* Info.plist */,
+			);
+			path = Transmitter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,12 +294,14 @@
 				165A318E1DDEB9AA00F15915 /* Frameworks */,
 				165A318F1DDEB9AA00F15915 /* Resources */,
 				165A31CF1DDEB9ED00F15915 /* Embed Frameworks */,
+				16D355611DEEE8E600444561 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				165A31CE1DDEB9ED00F15915 /* PBXTargetDependency */,
 				16A3B4031DDF07E800C82CE4 /* PBXTargetDependency */,
+				16D3555A1DEEE8E600444561 /* PBXTargetDependency */,
 			);
 			name = "L-pika";
 			productName = "L-pika";
@@ -275,6 +344,23 @@
 			productReference = 165A31B01DDEB9AA00F15915 /* L-pikaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		16D3554B1DEEE8E600444561 /* Transmitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D355601DEEE8E600444561 /* Build configuration list for PBXNativeTarget "Transmitter" */;
+			buildPhases = (
+				16D355481DEEE8E600444561 /* Sources */,
+				16D355491DEEE8E600444561 /* Frameworks */,
+				16D3554A1DEEE8E600444561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transmitter;
+			productName = Transmitter;
+			productReference = 16D3554C1DEEE8E600444561 /* Transmitter.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,6 +387,11 @@
 						DevelopmentTeam = KC8N9BMQJY;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 165A31901DDEB9AA00F15915;
+					};
+					16D3554B1DEEE8E600444561 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KC8N9BMQJY;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -330,6 +421,7 @@
 				165A31901DDEB9AA00F15915 /* L-pika */,
 				165A31A41DDEB9AA00F15915 /* L-pikaTests */,
 				165A31AF1DDEB9AA00F15915 /* L-pikaUITests */,
+				16D3554B1DEEE8E600444561 /* Transmitter */,
 			);
 		};
 /* End PBXProject section */
@@ -390,6 +482,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16D3554A1DEEE8E600444561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D355571DEEE8E600444561 /* Assets.xcassets in Resources */,
+				16D355551DEEE8E600444561 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -420,6 +521,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16D355481DEEE8E600444561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D355651DEEF37E00444561 /* CodeCreationView.swift in Sources */,
+				16D355631DEEF29000444561 /* CodeCreationViewController.swift in Sources */,
+				16D355521DEEE8E600444561 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -443,6 +554,11 @@
 			name = Eltaso;
 			targetProxy = 16A3B4021DDF07E800C82CE4 /* PBXContainerItemProxy */;
 		};
+		16D3555A1DEEE8E600444561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16D3554B1DEEE8E600444561 /* Transmitter */;
+			targetProxy = 16D355591DEEE8E600444561 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -460,6 +576,14 @@
 				165A319E1DDEB9AA00F15915 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		16D355531DEEE8E600444561 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16D355541DEEE8E600444561 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -648,6 +772,34 @@
 			};
 			name = Release;
 		};
+		16D3555C1DEEE8E600444561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = KC8N9BMQJY;
+				INFOPLIST_FILE = Transmitter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pika.Transmitter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		16D3555D1DEEE8E600444561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = KC8N9BMQJY;
+				INFOPLIST_FILE = Transmitter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pika.Transmitter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -683,6 +835,15 @@
 			buildConfigurations = (
 				165A31C01DDEB9AA00F15915 /* Debug */,
 				165A31C11DDEB9AA00F15915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16D355601DEEE8E600444561 /* Build configuration list for PBXNativeTarget "Transmitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D3555C1DEEE8E600444561 /* Debug */,
+				16D3555D1DEEE8E600444561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

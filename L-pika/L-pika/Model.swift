@@ -16,15 +16,16 @@ class Model: NSObject {
 	private let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
 	private let converter = Converter()
 	
+	private let torchQueue = DispatchQueue(label: "torch")
+	
 	@discardableResult
-	func sendMessage(_ message: String, through code: Converter.Code) -> String {
+	func sendMessage(_ message: String, through code: Converter.Code) -> (text: String, code: String) {
 		
 		let unitCodeTimeInterval: TimeInterval = 0.1
 		let code = self.converter.convert(message, to: code)
-		let binaryCodeGroups = self.converter.group(code: code.binaryCode)
-		print(code)
+		let binaryCodeGroups = self.converter.group(code: code.binaryCodeContainer)
 		
-		DispatchQueue.global().async {
+		self.torchQueue.async {
 			
 			binaryCodeGroups.forEach({ (binaryCodeGroup) in
 				let codeTimeInterval = unitCodeTimeInterval * TimeInterval(binaryCodeGroup.length)
@@ -35,7 +36,7 @@ class Model: NSObject {
 			
 		}
 		
-		return code.initializedString
+		return (code.initializedString, code.description)
 		
 	}
 	
@@ -62,7 +63,7 @@ class Model: NSObject {
 	
 }
 
-extension BinaryCode.Code {
+extension BinaryCodeContainer.Code {
 	
 	var torchMode: AVCaptureTorchMode {
 		switch self {

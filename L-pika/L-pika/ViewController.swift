@@ -55,8 +55,12 @@ extension ViewController {
 extension ViewController {
 	
 	func sendMessage() {
+		
 		if let message = self.mainView.textField.text {
-			self.mainView.textField.text = self.model.sendMessage(message, through: .morseCode)
+			let result = self.model.sendMessage(message, through: .baudotCode)
+			self.mainView.textField.text = result.text
+			self.mainView.resultView.text = result.code
+			
 		}
 	}
 	
