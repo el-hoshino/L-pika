@@ -11,7 +11,8 @@ import Eltaso
 import Alizes
 
 protocol CodeCreationViewControllerDelegate: class {
-	func codeCreationViewControllerWillBiginTextInput(_ codeCreationViewController: CodeCreationViewController)
+	func codeCreationViewControllerWillBiginTextInput(_ controller: CodeCreationViewController)
+	func codeCreationViewController(_ controller: CodeCreationViewController, didFinishTextInputWithText text: String)
 }
 
 class CodeCreationViewController: UIViewController {
@@ -22,7 +23,6 @@ class CodeCreationViewController: UIViewController {
 	
 	private(set) lazy var creationView: CodeCreationView = {
 		let view = CodeCreationView()
-		view.delegate = self
 		return view
 	}()
 	
@@ -42,7 +42,19 @@ class CodeCreationViewController: UIViewController {
 		
 		self.automaticallyAdjustsScrollViewInsets = false
 		
+		self.creationView.textInputView.delegate = self
 		self.creationView.beginTextInputButton.addTarget(self, action: #selector(CodeCreationViewController.onButtonTapped(_:)), for: .touchUpInside)
+	}
+	
+}
+
+extension CodeCreationViewController {
+	
+	fileprivate func displayCode(for text: String) {
+		
+		let code = self.converter.convert(text, to: .baudotCode)
+		self.creationView.displayCode(code.description)
+		
 	}
 	
 }
@@ -110,13 +122,20 @@ extension CodeCreationViewController {
 	
 }
 
-extension CodeCreationViewController: CodeCreationViewDelegate {
+extension CodeCreationViewController: UITextFieldDelegate {
 	
-	func codeCreationView(_ codeCreationView: CodeCreationView, didEndTextInputWithText text: String?) {
-		if let text = text {
-			let code = self.converter.convert(text, to: .baudotCode)
-			self.creationView.displayCode(code.description)
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		
+		self.shouldBeUnderTextInputMode = false
+		
+		if let text = textField.text {
+			self.displayCode(for: text)
+			self.delegate?.codeCreationViewController(self, didFinishTextInputWithText: text)
 		}
+		
+		
+		return true
+		
 	}
 	
 }

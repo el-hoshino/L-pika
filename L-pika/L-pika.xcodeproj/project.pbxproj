@@ -20,6 +20,7 @@
 		16A3B4001DDF07E800C82CE4 /* Eltaso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; };
 		16A3B4011DDF07E800C82CE4 /* Eltaso.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16A3B4161DE2EA4900C82CE4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B4151DE2EA4900C82CE4 /* View.swift */; };
+		16BA72621DF67BE4007B9E92 /* Alizes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165A31C81DDEB9E000F15915 /* Alizes.framework */; };
 		16D3554F1DEEE8E600444561 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D3554E1DEEE8E600444561 /* Messages.framework */; };
 		16D355521DEEE8E600444561 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355511DEEE8E600444561 /* MessagesViewController.swift */; };
 		16D355551DEEE8E600444561 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D355531DEEE8E600444561 /* MainInterface.storyboard */; };
@@ -178,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BA72621DF67BE4007B9E92 /* Alizes.framework in Frameworks */,
 				16D355681DEFEA2A00444561 /* Eltaso.framework in Frameworks */,
 				16D3554F1DEEE8E600444561 /* Messages.framework in Frameworks */,
 			);

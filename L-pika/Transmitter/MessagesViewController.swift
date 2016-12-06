@@ -104,11 +104,47 @@ class MessagesViewController: MSMessagesAppViewController {
 
 }
 
+extension MessagesViewController {
+	
+	fileprivate func composeMessage(with text: String) {
+		
+		guard let conversation = self.activeConversation else {
+			return
+		}
+		
+		let queryItem = URLQueryItem(name: "code", value: text)
+		let components = URLComponents(queryItems: [queryItem])
+		
+		let layout = MSMessageTemplateLayout()
+		layout.caption = "coded"
+		
+		let message = MSMessage()
+		message.layout = layout
+		message.url = components.url
+		
+		conversation.insert(message) { (error) in
+			if let error = error {
+				Console.shared.warning(error)
+			}
+		}
+		
+		
+	}
+	
+}
+
 extension MessagesViewController: CodeCreationViewControllerDelegate{
 	
-	func codeCreationViewControllerWillBiginTextInput(_ codeCreationViewController: CodeCreationViewController) {
+	func codeCreationViewControllerWillBiginTextInput(_ controller: CodeCreationViewController) {
 		if self.presentationStyle != .expanded {
 			self.requestPresentationStyle(.expanded)
+		}
+	}
+	
+	func codeCreationViewController(_ controller: CodeCreationViewController, didFinishTextInputWithText text: String) {
+		self.composeMessage(with: text)
+		if self.presentationStyle != .compact {
+			self.requestPresentationStyle(.compact)
 		}
 	}
 	

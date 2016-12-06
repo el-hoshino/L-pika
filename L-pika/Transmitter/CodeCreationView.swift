@@ -9,13 +9,7 @@
 import UIKit
 import Eltaso
 
-protocol CodeCreationViewDelegate: class {
-	func codeCreationView(_ codeCreationView: CodeCreationView, didEndTextInputWithText text: String?)
-}
-
 class CodeCreationView: UIView {
-	
-	weak var delegate: CodeCreationViewDelegate?
 	
 	lazy var beginTextInputButton: UIButton = {
 		let button = UIButton()
@@ -24,7 +18,6 @@ class CodeCreationView: UIView {
 	
 	lazy var textInputView: UITextField = {
 		let view = UITextField()
-		view.delegate = self
 		view.backgroundColor = .blue
 		return view
 	}()
@@ -117,14 +110,6 @@ extension CodeCreationView {
 	
 	func displayCode(_ code: String) {
 		self.codePreviewView.text = code
-	}
-	
-}
-
-extension CodeCreationView: UITextFieldDelegate {
-	
-	func textFieldDidEndEditing(_ textField: UITextField) {
-		self.delegate?.codeCreationView(self, didEndTextInputWithText: textField.text)
 	}
 	
 }
