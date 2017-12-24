@@ -14,13 +14,8 @@
 		165A319F1DDEB9AA00F15915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165A319D1DDEB9AA00F15915 /* LaunchScreen.storyboard */; };
 		165A31AA1DDEB9AA00F15915 /* L_pikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165A31A91DDEB9AA00F15915 /* L_pikaTests.swift */; };
 		165A31B51DDEB9AA00F15915 /* L_pikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165A31B41DDEB9AA00F15915 /* L_pikaUITests.swift */; };
-		165A31CB1DDEB9ED00F15915 /* Alizes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165A31C81DDEB9E000F15915 /* Alizes.framework */; };
-		165A31CC1DDEB9ED00F15915 /* Alizes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 165A31C81DDEB9E000F15915 /* Alizes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16A3B3FC1DDF057600C82CE4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B3FB1DDF057600C82CE4 /* Model.swift */; };
-		16A3B4001DDF07E800C82CE4 /* Eltaso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; };
-		16A3B4011DDF07E800C82CE4 /* Eltaso.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16A3B4161DE2EA4900C82CE4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B4151DE2EA4900C82CE4 /* View.swift */; };
-		16BA72621DF67BE4007B9E92 /* Alizes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165A31C81DDEB9E000F15915 /* Alizes.framework */; };
 		16D3554F1DEEE8E600444561 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D3554E1DEEE8E600444561 /* Messages.framework */; };
 		16D355521DEEE8E600444561 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355511DEEE8E600444561 /* MessagesViewController.swift */; };
 		16D355551DEEE8E600444561 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D355531DEEE8E600444561 /* MainInterface.storyboard */; };
@@ -28,24 +23,9 @@
 		16D3555B1DEEE8E600444561 /* Transmitter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 16D3554C1DEEE8E600444561 /* Transmitter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		16D355631DEEF29000444561 /* CodeCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355621DEEF29000444561 /* CodeCreationViewController.swift */; };
 		16D355651DEEF37E00444561 /* CodeCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355641DEEF37E00444561 /* CodeCreationView.swift */; };
-		16D355681DEFEA2A00444561 /* Eltaso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1654FF271DDEBCE000EE802B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 79E14E821D2B90DA00AF6EE4;
-			remoteInfo = Eltaso;
-		};
-		1654FF291DDEBCE000EE802B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 79E14E8C1D2B90DA00AF6EE4;
-			remoteInfo = EltasoTests;
-		};
 		165A31A61DDEB9AA00F15915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 165A31891DDEB9AA00F15915 /* Project object */;
@@ -59,34 +39,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 165A31901DDEB9AA00F15915;
 			remoteInfo = "L-pika";
-		};
-		165A31C71DDEB9E000F15915 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 165A316E1DDEB8E600F15915;
-			remoteInfo = Alizes;
-		};
-		165A31C91DDEB9E000F15915 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 165A31771DDEB8E600F15915;
-			remoteInfo = AlizesTests;
-		};
-		165A31CD1DDEB9ED00F15915 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 165A316D1DDEB8E600F15915;
-			remoteInfo = Alizes;
-		};
-		16A3B4021DDF07E800C82CE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 79E14E811D2B90DA00AF6EE4;
-			remoteInfo = Eltaso;
 		};
 		16D355591DEEE8E600444561 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -104,8 +56,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				16A3B4011DDF07E800C82CE4 /* Eltaso.framework in Embed Frameworks */,
-				165A31CC1DDEB9ED00F15915 /* Alizes.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,7 +74,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eltaso.xcodeproj; path = ../../Eltaso/Eltaso/Eltaso.xcodeproj; sourceTree = "<group>"; };
 		165A31911DDEB9AA00F15915 /* L-pika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "L-pika.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		165A31941DDEB9AA00F15915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		165A31961DDEB9AA00F15915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +87,6 @@
 		165A31B01DDEB9AA00F15915 /* L-pikaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "L-pikaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		165A31B41DDEB9AA00F15915 /* L_pikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L_pikaUITests.swift; sourceTree = "<group>"; };
 		165A31B61DDEB9AA00F15915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alizes.xcodeproj; path = ../../Alizes/Alizes/Alizes.xcodeproj; sourceTree = "<group>"; };
 		16A3B3FB1DDF057600C82CE4 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		16A3B4151DE2EA4900C82CE4 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		16D3554C1DEEE8E600444561 /* Transmitter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Transmitter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,8 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A3B4001DDF07E800C82CE4 /* Eltaso.framework in Frameworks */,
-				165A31CB1DDEB9ED00F15915 /* Alizes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +125,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16BA72621DF67BE4007B9E92 /* Alizes.framework in Frameworks */,
-				16D355681DEFEA2A00444561 /* Eltaso.framework in Frameworks */,
 				16D3554F1DEEE8E600444561 /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,20 +132,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1654FF221DDEBCE000EE802B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1654FF281DDEBCE000EE802B /* Eltaso.framework */,
-				1654FF2A1DDEBCE000EE802B /* EltasoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		165A31881DDEB9AA00F15915 = {
 			isa = PBXGroup;
 			children = (
-				1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */,
-				165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */,
 				165A31931DDEB9AA00F15915 /* L-pika */,
 				165A31A81DDEB9AA00F15915 /* L-pikaTests */,
 				165A31B31DDEB9AA00F15915 /* L-pikaUITests */,
@@ -255,15 +188,6 @@
 			path = "L-pikaUITests";
 			sourceTree = "<group>";
 		};
-		165A31C31DDEB9DF00F15915 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				165A31C81DDEB9E000F15915 /* Alizes.framework */,
-				165A31CA1DDEB9E000F15915 /* AlizesTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		16D3554D1DEEE8E600444561 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,8 +225,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				165A31CE1DDEB9ED00F15915 /* PBXTargetDependency */,
-				16A3B4031DDF07E800C82CE4 /* PBXTargetDependency */,
 				16D3555A1DEEE8E600444561 /* PBXTargetDependency */,
 			);
 			name = "L-pika";
@@ -408,16 +330,6 @@
 			mainGroup = 165A31881DDEB9AA00F15915;
 			productRefGroup = 165A31921DDEB9AA00F15915 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 165A31C31DDEB9DF00F15915 /* Products */;
-					ProjectRef = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
-				},
-				{
-					ProductGroup = 1654FF221DDEBCE000EE802B /* Products */;
-					ProjectRef = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				165A31901DDEB9AA00F15915 /* L-pika */,
@@ -427,37 +339,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		1654FF281DDEBCE000EE802B /* Eltaso.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Eltaso.framework;
-			remoteRef = 1654FF271DDEBCE000EE802B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1654FF2A1DDEBCE000EE802B /* EltasoTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = EltasoTests.xctest;
-			remoteRef = 1654FF291DDEBCE000EE802B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		165A31C81DDEB9E000F15915 /* Alizes.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alizes.framework;
-			remoteRef = 165A31C71DDEB9E000F15915 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		165A31CA1DDEB9E000F15915 /* AlizesTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AlizesTests.xctest;
-			remoteRef = 165A31C91DDEB9E000F15915 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		165A318F1DDEB9AA00F15915 /* Resources */ = {
@@ -545,16 +426,6 @@
 			isa = PBXTargetDependency;
 			target = 165A31901DDEB9AA00F15915 /* L-pika */;
 			targetProxy = 165A31B11DDEB9AA00F15915 /* PBXContainerItemProxy */;
-		};
-		165A31CE1DDEB9ED00F15915 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alizes;
-			targetProxy = 165A31CD1DDEB9ED00F15915 /* PBXContainerItemProxy */;
-		};
-		16A3B4031DDF07E800C82CE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Eltaso;
-			targetProxy = 16A3B4021DDF07E800C82CE4 /* PBXContainerItemProxy */;
 		};
 		16D3555A1DEEE8E600444561 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
