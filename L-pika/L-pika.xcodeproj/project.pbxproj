@@ -14,28 +14,18 @@
 		165A319F1DDEB9AA00F15915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165A319D1DDEB9AA00F15915 /* LaunchScreen.storyboard */; };
 		165A31AA1DDEB9AA00F15915 /* L_pikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165A31A91DDEB9AA00F15915 /* L_pikaTests.swift */; };
 		165A31B51DDEB9AA00F15915 /* L_pikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165A31B41DDEB9AA00F15915 /* L_pikaUITests.swift */; };
-		165A31CB1DDEB9ED00F15915 /* Alizes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 165A31C81DDEB9E000F15915 /* Alizes.framework */; };
-		165A31CC1DDEB9ED00F15915 /* Alizes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 165A31C81DDEB9E000F15915 /* Alizes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16A3B3FC1DDF057600C82CE4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B3FB1DDF057600C82CE4 /* Model.swift */; };
-		16A3B4001DDF07E800C82CE4 /* Eltaso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; };
-		16A3B4011DDF07E800C82CE4 /* Eltaso.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1654FF281DDEBCE000EE802B /* Eltaso.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		16A3B4161DE2EA4900C82CE4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3B4151DE2EA4900C82CE4 /* View.swift */; };
+		16D3554F1DEEE8E600444561 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D3554E1DEEE8E600444561 /* Messages.framework */; };
+		16D355521DEEE8E600444561 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355511DEEE8E600444561 /* MessagesViewController.swift */; };
+		16D355551DEEE8E600444561 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D355531DEEE8E600444561 /* MainInterface.storyboard */; };
+		16D355571DEEE8E600444561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D355561DEEE8E600444561 /* Assets.xcassets */; };
+		16D3555B1DEEE8E600444561 /* Transmitter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 16D3554C1DEEE8E600444561 /* Transmitter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		16D355631DEEF29000444561 /* CodeCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355621DEEF29000444561 /* CodeCreationViewController.swift */; };
+		16D355651DEEF37E00444561 /* CodeCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D355641DEEF37E00444561 /* CodeCreationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1654FF271DDEBCE000EE802B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 79E14E821D2B90DA00AF6EE4;
-			remoteInfo = Eltaso;
-		};
-		1654FF291DDEBCE000EE802B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 79E14E8C1D2B90DA00AF6EE4;
-			remoteInfo = EltasoTests;
-		};
 		165A31A61DDEB9AA00F15915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 165A31891DDEB9AA00F15915 /* Project object */;
@@ -50,53 +40,30 @@
 			remoteGlobalIDString = 165A31901DDEB9AA00F15915;
 			remoteInfo = "L-pika";
 		};
-		165A31C71DDEB9E000F15915 /* PBXContainerItemProxy */ = {
+		16D355591DEEE8E600444561 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 165A316E1DDEB8E600F15915;
-			remoteInfo = Alizes;
-		};
-		165A31C91DDEB9E000F15915 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 165A31771DDEB8E600F15915;
-			remoteInfo = AlizesTests;
-		};
-		165A31CD1DDEB9ED00F15915 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
+			containerPortal = 165A31891DDEB9AA00F15915 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 165A316D1DDEB8E600F15915;
-			remoteInfo = Alizes;
-		};
-		16A3B4021DDF07E800C82CE4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 79E14E811D2B90DA00AF6EE4;
-			remoteInfo = Eltaso;
+			remoteGlobalIDString = 16D3554B1DEEE8E600444561;
+			remoteInfo = Transmitter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		165A31CF1DDEB9ED00F15915 /* Embed Frameworks */ = {
+		16D355611DEEE8E600444561 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 13;
 			files = (
-				16A3B4011DDF07E800C82CE4 /* Eltaso.framework in Embed Frameworks */,
-				165A31CC1DDEB9ED00F15915 /* Alizes.framework in Embed Frameworks */,
+				16D3555B1DEEE8E600444561 /* Transmitter.appex in Embed App Extensions */,
 			);
-			name = "Embed Frameworks";
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eltaso.xcodeproj; path = ../../Eltaso/Eltaso/Eltaso.xcodeproj; sourceTree = "<group>"; };
 		165A31911DDEB9AA00F15915 /* L-pika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "L-pika.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		165A31941DDEB9AA00F15915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		165A31961DDEB9AA00F15915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,8 +77,16 @@
 		165A31B01DDEB9AA00F15915 /* L-pikaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "L-pikaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		165A31B41DDEB9AA00F15915 /* L_pikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L_pikaUITests.swift; sourceTree = "<group>"; };
 		165A31B61DDEB9AA00F15915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alizes.xcodeproj; path = ../../Alizes/Alizes/Alizes.xcodeproj; sourceTree = "<group>"; };
 		16A3B3FB1DDF057600C82CE4 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		16A3B4151DE2EA4900C82CE4 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		16D3554C1DEEE8E600444561 /* Transmitter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Transmitter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D3554E1DEEE8E600444561 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		16D355511DEEE8E600444561 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		16D355541DEEE8E600444561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		16D355561DEEE8E600444561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16D355581DEEE8E600444561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D355621DEEF29000444561 /* CodeCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeCreationViewController.swift; sourceTree = "<group>"; };
+		16D355641DEEF37E00444561 /* CodeCreationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeCreationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A3B4001DDF07E800C82CE4 /* Eltaso.framework in Frameworks */,
-				165A31CB1DDEB9ED00F15915 /* Alizes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,26 +111,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16D355491DEEE8E600444561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D3554F1DEEE8E600444561 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1654FF221DDEBCE000EE802B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1654FF281DDEBCE000EE802B /* Eltaso.framework */,
-				1654FF2A1DDEBCE000EE802B /* EltasoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		165A31881DDEB9AA00F15915 = {
 			isa = PBXGroup;
 			children = (
-				1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */,
-				165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */,
 				165A31931DDEB9AA00F15915 /* L-pika */,
 				165A31A81DDEB9AA00F15915 /* L-pikaTests */,
 				165A31B31DDEB9AA00F15915 /* L-pikaUITests */,
+				16D355501DEEE8E600444561 /* Transmitter */,
+				16D3554D1DEEE8E600444561 /* Frameworks */,
 				165A31921DDEB9AA00F15915 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -168,6 +140,7 @@
 				165A31911DDEB9AA00F15915 /* L-pika.app */,
 				165A31A51DDEB9AA00F15915 /* L-pikaTests.xctest */,
 				165A31B01DDEB9AA00F15915 /* L-pikaUITests.xctest */,
+				16D3554C1DEEE8E600444561 /* Transmitter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +150,7 @@
 			children = (
 				165A31941DDEB9AA00F15915 /* AppDelegate.swift */,
 				165A31961DDEB9AA00F15915 /* ViewController.swift */,
+				16A3B4151DE2EA4900C82CE4 /* View.swift */,
 				16A3B3FB1DDF057600C82CE4 /* Model.swift */,
 				165A31981DDEB9AA00F15915 /* Main.storyboard */,
 				165A319B1DDEB9AA00F15915 /* Assets.xcassets */,
@@ -204,13 +178,25 @@
 			path = "L-pikaUITests";
 			sourceTree = "<group>";
 		};
-		165A31C31DDEB9DF00F15915 /* Products */ = {
+		16D3554D1DEEE8E600444561 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				165A31C81DDEB9E000F15915 /* Alizes.framework */,
-				165A31CA1DDEB9E000F15915 /* AlizesTests.xctest */,
+				16D3554E1DEEE8E600444561 /* Messages.framework */,
 			);
-			name = Products;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16D355501DEEE8E600444561 /* Transmitter */ = {
+			isa = PBXGroup;
+			children = (
+				16D355511DEEE8E600444561 /* MessagesViewController.swift */,
+				16D355621DEEF29000444561 /* CodeCreationViewController.swift */,
+				16D355641DEEF37E00444561 /* CodeCreationView.swift */,
+				16D355531DEEE8E600444561 /* MainInterface.storyboard */,
+				16D355561DEEE8E600444561 /* Assets.xcassets */,
+				16D355581DEEE8E600444561 /* Info.plist */,
+			);
+			path = Transmitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,13 +209,13 @@
 				165A318D1DDEB9AA00F15915 /* Sources */,
 				165A318E1DDEB9AA00F15915 /* Frameworks */,
 				165A318F1DDEB9AA00F15915 /* Resources */,
-				165A31CF1DDEB9ED00F15915 /* Embed Frameworks */,
+				16D355611DEEE8E600444561 /* Embed App Extensions */,
+				79C7B9A71FEFFD91006863CE /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				165A31CE1DDEB9ED00F15915 /* PBXTargetDependency */,
-				16A3B4031DDF07E800C82CE4 /* PBXTargetDependency */,
+				16D3555A1DEEE8E600444561 /* PBXTargetDependency */,
 			);
 			name = "L-pika";
 			productName = "L-pika";
@@ -272,6 +258,24 @@
 			productReference = 165A31B01DDEB9AA00F15915 /* L-pikaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		16D3554B1DEEE8E600444561 /* Transmitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D355601DEEE8E600444561 /* Build configuration list for PBXNativeTarget "Transmitter" */;
+			buildPhases = (
+				16D355481DEEE8E600444561 /* Sources */,
+				16D355491DEEE8E600444561 /* Frameworks */,
+				16D3554A1DEEE8E600444561 /* Resources */,
+				79C7B9A61FEFFD3C006863CE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transmitter;
+			productName = Transmitter;
+			productReference = 16D3554C1DEEE8E600444561 /* Transmitter.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -279,25 +283,34 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = net.crazism;
 				TargetAttributes = {
 					165A31901DDEB9AA00F15915 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = KC8N9BMQJY;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					165A31A41DDEB9AA00F15915 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = KC8N9BMQJY;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 165A31901DDEB9AA00F15915;
 					};
 					165A31AF1DDEB9AA00F15915 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = KC8N9BMQJY;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 165A31901DDEB9AA00F15915;
+					};
+					16D3554B1DEEE8E600444561 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KC8N9BMQJY;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -312,55 +325,15 @@
 			mainGroup = 165A31881DDEB9AA00F15915;
 			productRefGroup = 165A31921DDEB9AA00F15915 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 165A31C31DDEB9DF00F15915 /* Products */;
-					ProjectRef = 165A31C21DDEB9DF00F15915 /* Alizes.xcodeproj */;
-				},
-				{
-					ProductGroup = 1654FF221DDEBCE000EE802B /* Products */;
-					ProjectRef = 1654FF211DDEBCE000EE802B /* Eltaso.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				165A31901DDEB9AA00F15915 /* L-pika */,
 				165A31A41DDEB9AA00F15915 /* L-pikaTests */,
 				165A31AF1DDEB9AA00F15915 /* L-pikaUITests */,
+				16D3554B1DEEE8E600444561 /* Transmitter */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		1654FF281DDEBCE000EE802B /* Eltaso.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Eltaso.framework;
-			remoteRef = 1654FF271DDEBCE000EE802B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1654FF2A1DDEBCE000EE802B /* EltasoTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = EltasoTests.xctest;
-			remoteRef = 1654FF291DDEBCE000EE802B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		165A31C81DDEB9E000F15915 /* Alizes.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alizes.framework;
-			remoteRef = 165A31C71DDEB9E000F15915 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		165A31CA1DDEB9E000F15915 /* AlizesTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AlizesTests.xctest;
-			remoteRef = 165A31C91DDEB9E000F15915 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		165A318F1DDEB9AA00F15915 /* Resources */ = {
@@ -387,13 +360,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16D3554A1DEEE8E600444561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D355571DEEE8E600444561 /* Assets.xcassets in Resources */,
+				16D355551DEEE8E600444561 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79C7B9A61FEFFD3C006863CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/Alizes.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Eltaso.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+		79C7B9A71FEFFD91006863CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/Alizes.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Eltaso.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		165A318D1DDEB9AA00F15915 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A3B4161DE2EA4900C82CE4 /* View.swift in Sources */,
 				16A3B3FC1DDF057600C82CE4 /* Model.swift in Sources */,
 				165A31971DDEB9AA00F15915 /* ViewController.swift in Sources */,
 				165A31951DDEB9AA00F15915 /* AppDelegate.swift in Sources */,
@@ -416,6 +432,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16D355481DEEE8E600444561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D355651DEEF37E00444561 /* CodeCreationView.swift in Sources */,
+				16D355631DEEF29000444561 /* CodeCreationViewController.swift in Sources */,
+				16D355521DEEE8E600444561 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -429,15 +455,10 @@
 			target = 165A31901DDEB9AA00F15915 /* L-pika */;
 			targetProxy = 165A31B11DDEB9AA00F15915 /* PBXContainerItemProxy */;
 		};
-		165A31CE1DDEB9ED00F15915 /* PBXTargetDependency */ = {
+		16D3555A1DEEE8E600444561 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Alizes;
-			targetProxy = 165A31CD1DDEB9ED00F15915 /* PBXContainerItemProxy */;
-		};
-		16A3B4031DDF07E800C82CE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Eltaso;
-			targetProxy = 16A3B4021DDF07E800C82CE4 /* PBXContainerItemProxy */;
+			target = 16D3554B1DEEE8E600444561 /* Transmitter */;
+			targetProxy = 16D355591DEEE8E600444561 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -458,19 +479,28 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		16D355531DEEE8E600444561 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16D355541DEEE8E600444561 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		165A31B71DDEB9AA00F15915 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -478,7 +508,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -487,6 +522,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -514,13 +550,14 @@
 		165A31B81DDEB9AA00F15915 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -528,7 +565,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -537,6 +579,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -566,7 +609,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pika";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -582,7 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pika";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -596,7 +639,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pikaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/L-pika.app/L-pika";
 			};
 			name = Debug;
@@ -611,7 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pikaTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/L-pika.app/L-pika";
 			};
 			name = Release;
@@ -625,7 +668,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pikaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "L-pika";
 			};
 			name = Debug;
@@ -639,8 +682,38 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pikaUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "L-pika";
+			};
+			name = Release;
+		};
+		16D3555C1DEEE8E600444561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = KC8N9BMQJY;
+				INFOPLIST_FILE = Transmitter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pika.Transmitter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		16D3555D1DEEE8E600444561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = KC8N9BMQJY;
+				INFOPLIST_FILE = Transmitter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.crazism.L-pika.Transmitter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -679,6 +752,15 @@
 			buildConfigurations = (
 				165A31C01DDEB9AA00F15915 /* Debug */,
 				165A31C11DDEB9AA00F15915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16D355601DEEE8E600444561 /* Build configuration list for PBXNativeTarget "Transmitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D3555C1DEEE8E600444561 /* Debug */,
+				16D3555D1DEEE8E600444561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
