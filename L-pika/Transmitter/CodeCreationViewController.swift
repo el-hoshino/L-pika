@@ -52,7 +52,7 @@ extension CodeCreationViewController {
 	
 	fileprivate func displayCode(for text: String) {
 		
-		let code = self.converter.convert(text, to: .baudotCode)
+		let code = self.converter.convert(text, to: .morseCode)
 		self.creationView.displayCode(code.description)
 		
 	}
