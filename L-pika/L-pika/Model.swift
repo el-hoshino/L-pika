@@ -13,17 +13,19 @@ import Alizes
 
 class Model: NSObject {
 	
-	private let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+	private let device = AVCaptureDevice.default(for: AVMediaType.video)
 	private let converter = Converter()
 	
-	func sendMessage(_ message: String) {
+	private let torchQueue = DispatchQueue(label: "torch")
+	
+	@discardableResult
+	func sendMessage(_ message: String, through code: Converter.Code) -> (text: String, code: String) {
 		
 		let unitCodeTimeInterval: TimeInterval = 0.1
-		let code = self.converter.convert(message, to: .morseCode)
-		let binaryCodeGroups = self.converter.group(code: code.binaryCode)
-		print(code)
+		let code = self.converter.convert(message, to: code)
+		let binaryCodeGroups = self.converter.group(code: code.binaryCodeContainer)
 		
-		DispatchQueue.global().async {
+		self.torchQueue.async {
 			
 			binaryCodeGroups.forEach({ (binaryCodeGroup) in
 				let codeTimeInterval = unitCodeTimeInterval * TimeInterval(binaryCodeGroup.length)
@@ -34,9 +36,11 @@ class Model: NSObject {
 			
 		}
 		
+		return (code.initializedString, code.description)
+		
 	}
 	
-	private func turnTorchMode(to mode: AVCaptureTorchMode, for interval: TimeInterval? = nil) {
+	private func turnTorchMode(to mode: AVCaptureDevice.TorchMode, for interval: TimeInterval? = nil) {
 		
 		guard let device = self.device else {
 			return
@@ -59,9 +63,9 @@ class Model: NSObject {
 	
 }
 
-extension BinaryCode.Code {
+extension BinaryCodeContainer.Code {
 	
-	var torchMode: AVCaptureTorchMode {
+	var torchMode: AVCaptureDevice.TorchMode {
 		switch self {
 		case .i:
 			return .on
