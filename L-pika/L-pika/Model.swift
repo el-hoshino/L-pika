@@ -13,7 +13,7 @@ import Alizes
 
 class Model: NSObject {
 	
-	private let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+	private let device = AVCaptureDevice.default(for: AVMediaType.video)
 	private let converter = Converter()
 	
 	private let torchQueue = DispatchQueue(label: "torch")
@@ -40,7 +40,7 @@ class Model: NSObject {
 		
 	}
 	
-	private func turnTorchMode(to mode: AVCaptureTorchMode, for interval: TimeInterval? = nil) {
+	private func turnTorchMode(to mode: AVCaptureDevice.TorchMode, for interval: TimeInterval? = nil) {
 		
 		guard let device = self.device else {
 			return
@@ -65,7 +65,7 @@ class Model: NSObject {
 
 extension BinaryCodeContainer.Code {
 	
-	var torchMode: AVCaptureTorchMode {
+	var torchMode: AVCaptureDevice.TorchMode {
 		switch self {
 		case .i:
 			return .on

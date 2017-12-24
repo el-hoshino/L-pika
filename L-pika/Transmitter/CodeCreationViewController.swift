@@ -52,7 +52,7 @@ extension CodeCreationViewController {
 	
 	fileprivate func displayCode(for text: String) {
 		
-		let code = self.converter.convert(text, to: .baudotCode)
+		let code = self.converter.convert(text, to: .morseCode)
 		self.creationView.displayCode(code.description)
 		
 	}
@@ -92,7 +92,7 @@ extension CodeCreationViewController {
 	
 	private func beginTextInput() {
 		
-		DispatchQueue.runMainQueueWork(forcedSync: false) {
+		DispatchQueue.Eltaso.runMainQueueWork(forcedSync: false) {
 			
 			do {
 				try self.creationView.beginTextInput()
@@ -107,7 +107,7 @@ extension CodeCreationViewController {
 	
 	private func endTextInput() {
 		
-		DispatchQueue.runMainQueueWork(forcedSync: false) {
+		DispatchQueue.Eltaso.runMainQueueWork(forcedSync: false) {
 			
 			do {
 				try self.creationView.endTextInput()

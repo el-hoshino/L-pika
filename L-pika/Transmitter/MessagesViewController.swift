@@ -113,7 +113,7 @@ extension MessagesViewController {
 		}
 		
 		let queryItem = URLQueryItem(name: "code", value: text)
-		let components = URLComponents(queryItems: [queryItem])
+		let components = URLComponents.Eltaso(queryItems: [queryItem])
 		
 		let layout = MSMessageTemplateLayout()
 		layout.caption = "coded"
