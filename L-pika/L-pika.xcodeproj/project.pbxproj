@@ -50,16 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		165A31CF1DDEB9ED00F15915 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		16D355611DEEE8E600444561 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,8 +209,8 @@
 				165A318D1DDEB9AA00F15915 /* Sources */,
 				165A318E1DDEB9AA00F15915 /* Frameworks */,
 				165A318F1DDEB9AA00F15915 /* Resources */,
-				165A31CF1DDEB9ED00F15915 /* Embed Frameworks */,
 				16D355611DEEE8E600444561 /* Embed App Extensions */,
+				79C7B9A71FEFFD91006863CE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -275,6 +265,7 @@
 				16D355481DEEE8E600444561 /* Sources */,
 				16D355491DEEE8E600444561 /* Frameworks */,
 				16D3554A1DEEE8E600444561 /* Resources */,
+				79C7B9A61FEFFD3C006863CE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -379,6 +370,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79C7B9A61FEFFD3C006863CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/Alizes.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Eltaso.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+		79C7B9A71FEFFD91006863CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/Alizes.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Eltaso.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		165A318D1DDEB9AA00F15915 /* Sources */ = {
