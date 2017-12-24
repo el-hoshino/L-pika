@@ -65,7 +65,7 @@ class CodeCreationView: UIView {
 	private func _layoutCodePreviewView() {
 		let view = self.codePreviewView
 		view.frame.origin.x = 0
-		view.frame.origin.y = self.textInputView.frame.bottom
+		view.frame.origin.y = self.textInputView.frame.eltaso.bottom
 		view.frame.size.width = self.frame.width
 		view.frame.size.height = self.frame.height - view.frame.origin.y
 	}

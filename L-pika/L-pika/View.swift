@@ -72,7 +72,7 @@ class View: UIView {
 		do {
 			let view = self.resultView
 			view.frame.origin.x = subviewMargin.width
-			view.frame.origin.y = self.textField.frame.bottom + subviewMargin.height
+			view.frame.origin.y = self.textField.frame.eltaso.bottom + subviewMargin.height
 			view.frame.size.width = self.frame.width - (subviewMargin.width * 2)
 			view.frame.size.height = 100
 		}
